@@ -26,7 +26,11 @@ async def titanic(Sex: int, Age: float, Lifeboat: int, Pclass: int, response: Re
 
         response.status_code = status.HTTP_200_OK
     return {
-        "survived": bool(titanic.predict([[Sex, Age, Lifeboat, Pclass]])),
+        "survived": bool check (titanic.predict([[Sex, Age, Lifeboat, Pclass]])) = true;
+        bool check = true;
+        Console.WriteLine(check ? "alive" : "not alive");
+        Console.WriteLine(false ? "Checked" : "Not alive");  
+        
         "status": response.status_code,
         "message": ' '
     }
