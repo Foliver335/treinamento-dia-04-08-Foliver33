@@ -17,4 +17,4 @@ RUN pip3 install fastapi uvicorn
 ENV FLASK_APP=flask_app.py  
 
 # comando rodado ao iniciar o container
-CMD ["flask", "run", "--host", "0.0.0.0", "--port", "8080"]
+CMD ["flask", "run", "--host", "0.0.0.0", "--port", "8080", "--reload"]
