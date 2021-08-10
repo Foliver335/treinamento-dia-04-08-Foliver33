@@ -1,0 +1,9 @@
+version: '3'
+
+services:
+  api:
+    build:
+      context: ./app
+      dockerfile: Dockerfile
+    ports:
+      - 80:80  # A porta 8080 substitui a 5000, pois não estava funcionando.
